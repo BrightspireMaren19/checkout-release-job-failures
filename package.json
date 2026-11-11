@@ -1,0 +1,20 @@
+{
+  "name": "checkout-release-job-failures",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/checkout_release_monitor.ts",
+    "demo": "tsx scripts/report_failed_release.ts",
+    "test": "tsx --test test/release_decision.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.8.0"
+  }
+}
